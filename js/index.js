@@ -130,13 +130,68 @@ window.onscroll=function(){
       }
 }
 //搜索框
-$(".search-input").blur(function(){
-	$(".search-input").css({"border":"0"})
+$(".search-input input").focus(function(){
+	console.log($(this));
+	$(this).css({"border":"0"});
 	$(".search_kuang").css({"display":"block"});
 	
-})
+});
 
+$(".search-input input").mouseleave(function(){
+//	console.log($(this));
+//	$(this).css({"border":"0"});
+	$(".search_kuang").css({"display":"none"});
 	
+});	
+//楼梯
+ window.onscroll=function(){
+ 	//每个版块初始化值
+ 	var p=0;
+ 	//把所有版块的class名放在一个数组里边
+ 	var arr=["main-one","main-two","recommend","shopping","fuli_center","marjor_con","lunbotu"];
+ 	//获取每个li
+ 	var lis=$(".floor").find("li");
+ 	//给每个li加点击事件
+ 	lis.click(function(){
+ 		//获取每个li的下标
+ 		var num=$(this).index();
+ 		var e=arr[num];
+// 		console.log(e);
+ 		//获取当前版块的offsetTop值
+// 		console.log($(e));
+ 		p=$(this).offsetTop;
+// 		p=$(".$(e)").offsetTop;
+   		console.log(p);
+// 		
+ 	})
+ 	
+ 	
+ 	
+ 	
+ 	
+ 	
+ }
+//$(window).scroll(function(){
+//			//楼梯
+//			var p=0; //  每个版块初始化值
+//			var arr=["hot","phone","computer1","computer2","hand","home","peijian1","peijian2"];  //把所有版块的class名放在数组中
+//			var lis=$(".u1").find("li"); //返回所有的li
+//			lis.click(function(){
+//				var q=$(this).index();//获取点击时li的下标
+//				p=document.getElementById(arr[q]).offsetTop; //获取当前版块的offsetTop  ，版块到页面最顶端的距离
+//		//		console.log(p);
+//				$("body").stop().animate({"scrollTop":p+"px"},400)
+//			});
+//		   var bodyObj=document.body.scrollTop||document.documentElement.scrollTop;
+//			//console.log(bodyObj);
+//			var main=$("main")[0].offsetTop;
+//			if(bodyObj>=main){
+//				$("#star").css({opacity:"1",transition:"all 2s"});
+//			}else if(bodyObj==0){
+//				$("#star").css({opacity:"0",transition:"all 2s"});
+//			}
+//	  });
+//                                                
 	
 	
 	

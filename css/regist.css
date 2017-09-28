@@ -1,0 +1,74 @@
+body {
+  background: #efefef; }
+
+header {
+  overflow: hidden; }
+  header h1 {
+    background: url(../images/regist/sprite.png) no-repeat 0 0;
+    width: 318px;
+    height: 81px;
+    float: left;
+    margin-top: 26px; }
+  header p {
+    float: right;
+    font-size: 18px;
+    margin-top: 50px;
+    color: #666; }
+    header p a {
+      color: #ca5252;
+      font-size: 18px; }
+
+main {
+  position: relative;
+  padding-bottom: 55px;
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0 3px 3px #cbc9c9; }
+  main .zhuce {
+    width: 320px;
+    margin: 0 auto;
+    padding-top: 44px;
+    padding-bottom: 24px;
+    overflow: hidden;
+    display: flex; }
+    main .zhuce .normal {
+      background: #ca5252;
+      border-color: #ca5252;
+      color: #fff;
+      width: 159px;
+      border: solid 1px #ccc;
+      height: 38px;
+      line-height: 38px;
+      text-align: center;
+      font-size: 16px; }
+    main .zhuce .beauty {
+      display: block;
+      width: 159px;
+      border: solid 1px #ccc;
+      border-left: 0;
+      height: 38px;
+      line-height: 38px;
+      text-align: center;
+      font-size: 16px;
+      position: relative;
+      color: #666; }
+      main .zhuce .beauty .new {
+        position: absolute;
+        font-size: 9px;
+        color: #fff;
+        background: #ca5252;
+        height: 12px;
+        line-height: 9px;
+        width: 26px;
+        top: 4px;
+        border-radius: 2px;
+        right: 12px; }
+  main .con {
+    height: 620px; }
+    main .con .zhanghao {
+      width: 100%;
+      position: relative;
+      float: left;
+      height: 72px; }
+
+/*# sourceMappingURL=regist.css.map */

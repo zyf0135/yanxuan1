@@ -1105,7 +1105,7 @@ overflow: hidden;
 .lunbo{
 	width: 100%;
 	margin-top:60px;
-	padding:60px;
+	padding: 60px 0px;
 	background-color: #f4f0ea;
 	overflow: hidden;
 	position: relative;
@@ -1391,8 +1391,8 @@ border: 0;
 /*------滚轮事件-------*/
 .scroll_q{
     width: 100%;
-    height:80px;
-    background:#f4f0ea;
+    height:56px;
+    background:#fff;
     position:fixed;
     top:0;
     /*left:0;*/
@@ -1452,4 +1452,60 @@ border: 0;
 }
 .search_kuang :nth-child(2),.search_kuang :nth-child(3){
 	color:red;
+}
+/*--------侧边栏-------*/
+.ce_bar{
+	position:fixed;
+	right:0;
+	top:57px;
+	z-index:300;
+	
+}
+.ce_bar a{
+	display: block;
+	width: 72px;
+	height: 82px;
+	background-color: #fff;
+	color: #666;
+	text-align: center;
+	line-height: 1;
+	cursor: pointer;
+	padding-top: 14px;
+	position: relative;
+}
+#autmu{
+	width: 72px;
+	height:150px;
+	padding:0;
+}
+.autmu img{
+	width: 100%;
+	height:100%;
+}
+.a_a{
+	background:url(../images/index/p2.png) no-repeat;
+	height: 31px;
+    width: 32px;
+}
+
+.a_a p{
+	line-height: 20px;
+font-size: 14px;
+margin: 8px auto 0;
+color:#333;
+}
+/*---------楼梯-------------*/
+.floor{
+	position:fixed;
+	left:0;
+	top:200px;
+	background: #fff;
+	opacity: 0.6;
+	
+	
+}
+.floor li{
+	padding:20px;
+	color:#A7936E;
+	font-size:16px;
 }
