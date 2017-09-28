@@ -1,0 +1,29 @@
+html,body,div,p,ul,li,ol,dl,dt,dd,form,table,tr,td,hr,h1,h2,h3,h4,h5,h6,img,input{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "微软雅黑",Arial;
+    font-size:12px;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+img{
+    border:none;
+}
+/*公共样式*/
+.w{
+    width:1090px;
+    margin:0 auto;
+}
+.l{
+    float:left;
+}
+.r{
+    float:right;
+}
